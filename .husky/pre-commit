@@ -1,0 +1,3 @@
+#!/bin/sh
+MSYS2_ARG_CONV_EXCL='*' cmd.exe /c scripts\\husky\\pre-commit.cmd
+

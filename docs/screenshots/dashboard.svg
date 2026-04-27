@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="#0b1220"/>
+  <rect width="1200" height="675" fill="url(#g)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="60" width="260" height="555" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(229,231,235,0.14)"/>
+    <rect x="340" y="60" width="800" height="56" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(229,231,235,0.14)"/>
+    <rect x="340" y="136" width="800" height="160" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(229,231,235,0.14)"/>
+    <rect x="340" y="316" width="392" height="299" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(229,231,235,0.14)"/>
+    <rect x="748" y="316" width="392" height="299" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(229,231,235,0.14)"/>
+  </g>
+
+  <text x="94" y="112" font-size="16" font-family="system-ui,Segoe UI,Roboto" fill="#e5e7eb" font-weight="800">Vite Vue3 Admin</text>
+  <rect x="94" y="140" width="200" height="40" rx="12" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.25)"/>
+  <text x="114" y="166" font-size="13" font-family="system-ui,Segoe UI,Roboto" fill="#e5e7eb">êhØ</text>
+
+  <text x="366" y="95" font-size="16" font-family="system-ui,Segoe UI,Roboto" fill="#e5e7eb" font-weight="800">êhØ</text>
+  <text x="1080" y="95" font-size="12" text-anchor="end" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">`}admin</text>
+
+  <text x="366" y="176" font-size="12" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">êhØ</text>
+  <text x="366" y="212" font-size="24" font-family="system-ui,Segoe UI,Roboto" fill="#e5e7eb" font-weight="900">"ÎŞeadmin</text>
+  <text x="366" y="244" font-size="13" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">SMöô2026/4/27 10:30:00</text>
+
+  <text x="600" y="648" text-anchor="middle" font-size="13" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">*ş:SVG `M	</text>
+</svg>
+

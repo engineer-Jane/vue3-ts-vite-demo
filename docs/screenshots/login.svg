@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="#0b1220"/>
+  <rect width="1200" height="675" fill="url(#g)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="390" y="145" width="420" height="385" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(229,231,235,0.14)"/>
+  </g>
+
+  <text x="420" y="210" font-size="28" font-family="system-ui,Segoe UI,Roboto" fill="#e5e7eb" font-weight="800">{U</text>
+  <text x="420" y="240" font-size="14" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">Ø¤&÷Æadmin / admin</text>
+
+  <text x="420" y="290" font-size="12" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">&÷</text>
+  <rect x="420" y="302" width="360" height="44" rx="12" fill="#0b1220" stroke="rgba(229,231,235,0.14)"/>
+  <text x="438" y="331" font-size="14" font-family="system-ui,Segoe UI,Roboto" fill="#e5e7eb">admin</text>
+
+  <text x="420" y="380" font-size="12" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">Æ</text>
+  <rect x="420" y="392" width="360" height="44" rx="12" fill="#0b1220" stroke="rgba(229,231,235,0.14)"/>
+  <text x="438" y="421" font-size="14" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">""""""</text>
+
+  <rect x="420" y="458" width="360" height="46" rx="12" fill="url(#btn)"/>
+  <text x="600" y="488" text-anchor="middle" font-size="15" font-family="system-ui,Segoe UI,Roboto" fill="#fff" font-weight="700">{U</text>
+
+  <text x="600" y="610" text-anchor="middle" font-size="13" font-family="system-ui,Segoe UI,Roboto" fill="rgba(229,231,235,0.65)">*þ:SVG `M	</text>
+</svg>
+

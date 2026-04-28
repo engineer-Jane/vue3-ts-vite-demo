@@ -31,6 +31,14 @@
 - Node.js 18+（建议 LTS）
 - npm 9+
 
+### 环境变量（可选）
+
+项目使用 Vite 环境变量控制接口地址与是否启用 mock（见 `.env.example`）：
+
+- **`VITE_API_BASE`**：Axios `baseURL`（默认 `/api`）
+- **`VITE_USE_MOCK`**：是否启用前端 mock（开发环境默认 `true`，生产默认 `false`）
+- **`VITE_PROXY_TARGET`**：可选；配置后 Vite 会把 `/api` 代理到该后端地址
+
 ### 安装依赖
 
 ```bash
@@ -78,9 +86,12 @@ git commit -m "fix: correct login redirect"
 
 ```text
 src/
+  api/              # 接口层（Axios 封装/模块化 API）
   layouts/          # 后台布局
   router/           # 路由与守卫
   stores/           # Pinia store（示例：auth）
+  types/            # 类型定义（ApiResponse/DTO 等）
+  utils/            # 工具方法（如 token 存储）
   styles/           # 全局样式
   views/            # 页面（login / dashboard / 404）
 ```

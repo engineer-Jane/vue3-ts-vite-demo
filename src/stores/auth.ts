@@ -1,35 +1,41 @@
 import { defineStore } from 'pinia'
+import { login as loginByApi } from '../api/modules/auth'
+import type { LoginPayload } from '../types/auth'
+import {
+  clearAccessToken,
+  clearStoredUsername,
+  getAccessToken,
+  getStoredUsername,
+  setAccessToken,
+  setStoredUsername,
+} from '../utils/auth-storage'
 
 type AuthState = {
   token: string | null
   username: string
 }
 
-const TOKEN_KEY = 'admin_token'
-
 export const useAuthStore = defineStore('auth', {
   state: (): AuthState => ({
-    token: localStorage.getItem(TOKEN_KEY),
-    username: 'admin',
+    token: getAccessToken(),
+    username: getStoredUsername(),
   }),
   getters: {
     isAuthed: (state) => Boolean(state.token),
   },
   actions: {
-    async login(payload: { username: string; password: string }) {
-      if (!payload.username || !payload.password) {
-        throw new Error('请输入账号和密码')
-      }
-
-      // Demo: 直接发 token，真实项目请替换为接口请求
-      const token = `${payload.username}-${Date.now()}`
-      this.token = token
-      this.username = payload.username
-      localStorage.setItem(TOKEN_KEY, token)
+    async login(payload: LoginPayload) {
+      const result = await loginByApi(payload)
+      this.token = result.token
+      this.username = result.username
+      setAccessToken(result.token)
+      setStoredUsername(result.username)
     },
     logout() {
       this.token = null
-      localStorage.removeItem(TOKEN_KEY)
+      this.username = 'admin'
+      clearAccessToken()
+      clearStoredUsername()
     },
   },
 })

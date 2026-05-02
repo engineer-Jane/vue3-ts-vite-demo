@@ -36,7 +36,7 @@
 项目使用 Vite 环境变量控制接口地址与是否启用 mock（见 `.env.example`）：
 
 - **`VITE_API_BASE`**：Axios `baseURL`（默认 `/api`）
-- **`VITE_USE_MOCK`**：是否启用前端 mock（开发环境默认 `true`，生产默认 `false`）
+- **`VITE_USE_MOCK`**：是否启用前端 mock（本脚手架开发与生产默认均为 `true`，接入真实后端时在对应 `.env.*` 中设为 `false`）
 - **`VITE_PROXY_TARGET`**：可选；配置后 Vite 会把 `/api` 代理到该后端地址
 
 ### 安装依赖

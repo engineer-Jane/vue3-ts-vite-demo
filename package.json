@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "typecheck": "vue-tsc -b --pretty false",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "axios": "^1.15.2",
@@ -20,6 +21,7 @@
     "vue-router": "^4.6.1"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.35.0",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.26.0",
@@ -36,7 +38,8 @@
     "prettier": "^3.6.2",
     "typescript": "~6.0.2",
     "vite": "^8.0.10",
-    "vue-tsc": "^3.2.7"
+    "vue-tsc": "^3.2.7",
+    "wrangler": "^4.87.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": [
